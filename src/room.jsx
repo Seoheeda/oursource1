@@ -2,6 +2,10 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import pinkRoom from "./assets/pinkRoom.png";
+import pinkNote from "./assets/pinkNote.png";
+import pinkPic1 from "./assets/pinkPic1.png";
+import pinkPic2 from "./assets/pinkPic2.png";
 
 const Room = () => {
   const location = useLocation();
@@ -18,9 +22,12 @@ const Room = () => {
 
   return (
     <Container>
-      {doorIndex !== undefined && <div>{doorIndex + 1}번 작가임</div>}
-      <div className="notebook" onClick={clickNotebook}>노트북임</div>
-      <div className="picture" onClick={clickPicture}>그림임</div>
+      <div>
+        <img className="room" src={pinkRoom} alt="Room"></img>
+        <img className="note" onClick={clickNotebook} src={pinkNote} alt="Notebook"></img>
+        <img className="pic1" onClick={clickPicture} src={pinkPic1} alt="Picture1"></img>
+        <img className="pic2" onClick={clickPicture} src={pinkPic2} alt="Picture2"></img>
+      </div>
     </Container>
   );
 };
@@ -29,23 +36,39 @@ export default Room;
 
 const Container = styled.div`
   display: flex;
-  width: 100%;
-  height: 740px;
+  width: 1525px;
+  height: 865px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  .notebook {
-    width: 100px;
-    height: 100px;
-    background-color: pink;
-    text-align: center;
-    cursor: pointer;
+  background-color: gray;
+  position: relative; /* Add relative positioning to the container */
+
+  .room {
+    width: 100%;
+    height: 100%;
   }
-  .picture {
-    width: 100px;
-    height: 100px;
-    background-color: lightblue;
-    text-align: center;
+  .note, .pic1, .pic2 {
+    position: absolute;
     cursor: pointer;
+    transition: opacity 0.3s ease; 
+  }
+  .note:hover, .pic1:hover, .pic2:hover {
+    opacity: 0.7; /* Change opacity on hover */
+  }
+  .note {
+    width: 150px;
+    top: 390px;
+    left: 620px;
+  }
+  .pic1 {
+    width: 80px;
+    top: 150px;
+    left: 640px;
+  }
+  .pic2 {
+    width: 80px;
+    top: 310px;
+    left: 480px;
   }
 `;
