@@ -31,11 +31,11 @@ const Main = () => {
 
   return (
     <Container >
-      <DoorsContainer {...handlers} currentDoor={currentDoor}>
+      <DoorsContainer currentDoor={currentDoor}>
         {doors.map((door, index) => (
           <div key={index} className="door">
             <img src={door} alt={`door${index + 1}`} onClick={() => clickDoor(index)} className="door-image" />
-            <div className="clickhere" onClick={() => clickDoor(index)}>문입니다 여기 눌러보셈</div>
+            <div {...handlers} className="cover"></div>
           </div>
         ))}
       </DoorsContainer>
@@ -51,7 +51,7 @@ const Container = styled.div`
   height: 565px;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* 오버플로우 숨기기 */
+  overflow: hidden; /* Hide overflow */
   position: relative;
 `;
 
@@ -63,20 +63,29 @@ const DoorsContainer = styled.div`
   transform: translateX(${(props) => -props.currentDoor * 100}%);
 
   .door {
-    background-color: lightgray;
+    background-color: #F0F0F0;
     width: 290px;
     height: 565px;
     text-align: center;
     flex-shrink: 0;
+    position: relative; /* Added relative position */
   }
 
   .door-image {
     width: 100%;
     height: auto;
+    z-index: 10;
+    pointer-events: none;
   }
 
-  .clickhere {
-    cursor: pointer;
-    color: blue;
+  .cover {
+    background-color: red;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Added absolute position */
+    top: 0;
+    left: 0;
+    opacity: 0;
   }
 `;
