@@ -2,10 +2,10 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import pinkRoom from "./assets/pinkRoom.png";
-import pinkNote from "./assets/pinkNote.png";
-import pinkPic1 from "./assets/pinkPic1.png";
-import pinkPic2 from "./assets/pinkPic2.png";
+import pinkRoom from "./assets/pinkRoom.svg";
+import pinkNote from "./assets/pinkNote.svg";
+import pinkPic1 from "./assets/pinkPic1.svg";
+import pinkPic2 from "./assets/pinkPic2.svg";
 
 const Room = () => {
   const location = useLocation();
@@ -37,11 +37,10 @@ export default Room;
 const Container = styled.div`
   display: flex;
   width: 1525px;
-  height: 865px;
+  height: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: gray;
   position: relative; /* Add relative positioning to the container */
 
   .room {
