@@ -34,8 +34,8 @@ const Main = () => {
       <DoorsContainer currentDoor={currentDoor}>
         {doors.map((door, index) => (
           <div key={index} className="door">
-            <img src={door} alt={`door${index + 1}`} onClick={() => clickDoor(index)} className="door-image" />
-            <div {...handlers} className="cover"></div>
+            <img src={door} alt={`door${index + 1}`} className="door-image" />
+            <div {...handlers} onClick={() => clickDoor(index)} className="cover"></div>
           </div>
         ))}
       </DoorsContainer>

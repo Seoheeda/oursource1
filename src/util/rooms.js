@@ -18,6 +18,7 @@ import greenRoom from '../assets/green/greenRoom.svg';
 import greenNote from '../assets/green/greenNote.svg';
 import greenPic1 from '../assets/green/greenPic1.svg';
 import greenPic2 from '../assets/green/greenPic2.svg';
+import greenRoom2 from '../assets/green/greenRoom2.png';
 
 
 const ROOMS = {
@@ -46,7 +47,7 @@ const ROOMS = {
         pic2: purplePic2,
     },
     green: {
-        room: greenRoom,
+        room: greenRoom2,
         note: greenNote,
         pic1: greenPic1,
         pic2: greenPic2,
