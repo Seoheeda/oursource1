@@ -4,7 +4,6 @@ import { useSwipeable } from "react-swipeable";
 import { useNavigate } from "react-router-dom";
 import DOORS from '../util/doors';
 
-
 const Main = () => {
   const [currentDoor, setCurrentDoor] = useState(0);
   const doors = [DOORS.yellow, DOORS.pink, DOORS.red, DOORS.purple, DOORS.green];
@@ -30,12 +29,16 @@ const Main = () => {
   };
 
   return (
-    <Container >
-      <DoorsContainer currentDoor={currentDoor}>
+    <Container>
+      <DoorsContainer currentDoor={currentDoor} doorCount={doors.length}>
         {doors.map((door, index) => (
-          <div key={index} className="door">
-            <img src={door} alt={`door${index + 1}`} className="door-image" />
-            <div {...handlers} onClick={() => clickDoor(index)} className="cover"></div>
+          <div key={index} className="door-wrapper" {...handlers}>
+            <div className="left"></div>
+            <div className="door">
+              <img src={door} alt={`door${index + 1}`} className="door-image" />
+              <div onClick={() => clickDoor(index)} className="cover"></div>
+            </div>
+            <div className="right"></div>
           </div>
         ))}
       </DoorsContainer>
@@ -47,28 +50,39 @@ export default Main;
 
 const Container = styled.div`
   display: flex;
-  width: 285px;
+  width: 100%;
   height: 565px;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Hide overflow */
+  overflow: hidden;
   position: relative;
 `;
 
 const DoorsContainer = styled.div`
   display: flex;
-  width: 290px;
   height: 565px;
   transition: transform 0.5s ease-in-out;
-  transform: translateX(${(props) => -props.currentDoor * 100}%);
+  width: ${({ doorCount }) => doorCount * 1350}px; /* Adjusted width based on the door count */
+  transform: translateX(${({ currentDoor }) => -currentDoor * 1350}px); /* Adjusted width for space around doors */
+
+  .door-wrapper {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 1350px; /* Adjusted total width including spacing */
+  }
+
+  .left, .right {
+    width: 480px; /* Adjusted for proper spacing */
+    height: 100%;
+  }
 
   .door {
     background-color: #F0F0F0;
     width: 290px;
     height: 565px;
     text-align: center;
-    flex-shrink: 0;
-    position: relative; /* Added relative position */
+    position: relative;
   }
 
   .door-image {
@@ -79,11 +93,10 @@ const DoorsContainer = styled.div`
   }
 
   .cover {
-    background-color: red;
     z-index: 1000;
     width: 100%;
     height: 100%;
-    position: absolute; /* Added absolute position */
+    position: absolute;
     top: 0;
     left: 0;
     opacity: 0;

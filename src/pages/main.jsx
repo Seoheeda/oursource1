@@ -1,19 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import Door from "../components/door";
-import yeWon from '../assets/title/yeWon.svg';
-import ofCourse from '../assets/title/ofCource.svg';
-import artists from '../assets/title/artists.svg';
+import yeWon from "../assets/title/yeWon.svg";
+import ofCourse from "../assets/title/ofCource.svg";
+import artists from "../assets/title/artists.svg";
 
 const Main = () => {
   return (
     <Container>
-      <img className="yeWon" alt="yeWon" src={yeWon}/>
+      <img className="yeWon" alt="yeWon" src={yeWon} />
       <DoorContainer>
-        <img className="ofCourse" alt="ofCourse" src={ofCourse}/>
-        <Door />
+        {/* <img className="ofCourse" alt="ofCourse" src={ofCourse} /> */}
+        <div className="door">
+          <Door />
+        </div>
       </DoorContainer>
-      <img className="artists" alt="artists" src={artists}/>
+      <img className="artists" alt="artists" src={artists} />
     </Container>
   );
 };
@@ -26,9 +28,9 @@ const Container = styled.div`
   flex-direction: column;
   width: 1213px;
   height: 800px;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  position: relative; 
+  position: relative;
   /* background-color: gray; */
 
   .yeWon {
@@ -46,11 +48,12 @@ const DoorContainer = styled.div`
   flex-direction: row;
   align-items: flex-end;
   position: absolute;
-  left: 0; 
+  left: 0;
   z-index: 10000;
 
   .ofCourse {
     margin-right: 20px;
     margin-bottom: 50px;
   }
+  .door {}
 `;
