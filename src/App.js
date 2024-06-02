@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Main from './main';
-import Room from './room';
-import Interview from './interview';
-import Piece from './piece';
+import Main from './pages/main';
+import Room from './pages/room';
+import Interview from './pages/interview';
+import Piece from './pages/piece';
 
 function App() {
   return (
