@@ -50,9 +50,9 @@ export default Main;
 
 const Container = styled.div`
   display: flex;
-  width: 100%;
+  width: 1350px;
   height: 565px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   overflow: hidden;
   position: relative;
@@ -100,5 +100,6 @@ const DoorsContainer = styled.div`
     top: 0;
     left: 0;
     opacity: 0;
+    cursor: pointer;
   }
 `;
