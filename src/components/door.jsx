@@ -83,6 +83,7 @@ const DoorsContainer = styled.div`
     height: 565px;
     text-align: center;
     position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 10px 0 20px rgba(0, 0, 0, 0.2); /* Adjusted shadow effect */
   }
 
   .door-image {

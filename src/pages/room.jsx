@@ -55,7 +55,7 @@ export default Room;
 
 const Container = styled.div`
   display: flex;
-  width: 1525px;
+  width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -72,21 +72,21 @@ const Container = styled.div`
     transition: opacity 0.3s ease; /* Smooth transition for opacity */
   }
   .note:hover, .pic1:hover, .pic2:hover {
-    opacity: 0.8; /* Change opacity on hover */
+    opacity: 0.6; /* Change opacity on hover */
   }
   .note {
     width: 150px;
-    top: 390px;
-    left: 620px;
+    top: 370px;
+    left: 600px;
   }
   .pic1 {
-    width: 80px;
-    top: 150px;
-    left: 640px;
+    width: 100px;
+    top: 130px;
+    left: 630px;
   }
   .pic2 {
-    width: 80px;
-    top: 310px;
+    width: 110px;
+    top: 270px;
     left: 480px;
   }
 `;
