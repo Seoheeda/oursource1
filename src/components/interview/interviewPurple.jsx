@@ -65,7 +65,7 @@ const InterViewYellow = () => {
           </Body>
           <Title src={interview} alt="interview" />
           <Body>
-            <Left style={{ marginLeft: "20px" }}>
+            <Left style={{ marginLeft: "5px" }}>
               <Question>
                 어떤 것이 예술에 대한 관심을 가지게 했나요?
                 <br />
@@ -86,7 +86,7 @@ const InterViewYellow = () => {
                 <br />I visited a lot of exhibitions from a young age.
               </Content>
             </Left>
-            <Right style={{ paddingLeft: "50px" }}>
+            <Right style={{ paddingLeft: "70px" }}>
               <Question>
                 자신의 예전 작품을 다시 본 경험이 있나요?
                 <br /> {archiveText}에서 과거의 작품들을 다시 보면,

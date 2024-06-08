@@ -10,7 +10,7 @@ const Main = () => {
     <Container>
       <img className="yeWon" alt="yeWon" src={yeWon} />
       <DoorContainer>
-        {/* <img className="ofCourse" alt="ofCourse" src={ofCourse} /> */}
+        <img className="ofCourse" alt="ofCourse" src={ofCourse} />
         <div className="door">
           <Door />
         </div>
@@ -52,8 +52,11 @@ const DoorContainer = styled.div`
   z-index: 10000;
 
   .ofCourse {
-    margin-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
+    margin-right: 10px;
+    display: flex;
+    position: absolute;
   }
-  .door {}
+  .door {
+  }
 `;

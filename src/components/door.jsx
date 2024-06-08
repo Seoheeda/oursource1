@@ -51,7 +51,7 @@ export default Main;
 const Container = styled.div`
   display: flex;
   width: 1350px;
-  height: 565px;
+  height: 665px;
   /* justify-content: center; */
   align-items: center;
   overflow: hidden;
@@ -60,7 +60,7 @@ const Container = styled.div`
 
 const DoorsContainer = styled.div`
   display: flex;
-  height: 565px;
+  height: 665px;
   transition: transform 0.5s ease-in-out;
   width: ${({ doorCount }) => doorCount * 1350}px; /* Adjusted width based on the door count */
   transform: translateX(${({ currentDoor }) => -currentDoor * 1350}px); /* Adjusted width for space around doors */
@@ -78,17 +78,15 @@ const DoorsContainer = styled.div`
   }
 
   .door {
-    background-color: #F0F0F0;
     width: 290px;
-    height: 565px;
+    height: 615px;
     text-align: center;
     position: relative;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 10px 0 20px rgba(0, 0, 0, 0.2); /* Adjusted shadow effect */
   }
 
   .door-image {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 620px;
     z-index: 10;
     pointer-events: none;
   }

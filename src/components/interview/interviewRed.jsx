@@ -113,7 +113,7 @@ const InterViewYellow = () => {
                 interest in art.
               </Content>
             </Left>
-            <Right style={{ paddingLeft: "50px" }}>
+            <Right style={{ paddingLeft: "15px" }}>
               <Question>
                 자신의 예전 작품을 다시 본 경험이 있나요?
                 <br /> {archiveText}에서 과거의 작품들을 다시 보면,
@@ -229,7 +229,7 @@ const InterViewYellow = () => {
                 <br /> it brings back fresh memories.
               </Content>
             </Left>
-            <Right>
+            <Right style={{paddingLeft: '5px'}}>
               <Question>
                 아티스트로서 앞으로 추구하고 싶은 예술 활동이나 <br />
                 목표가 있다면 무엇인가요?
@@ -293,13 +293,13 @@ const InterViewYellow = () => {
                 각해요.
               </Content>
             </Left>
-            <Right>
-              <Question>
+            <Right style={{paddingLeft: '5px'}}>
+              <Question style={{marginLeft: '55px'}}>
                 What was the reason for your admission to
                 <br />
                 Yewon School?
               </Question>
-              <Content>
+              <Content style={{marginLeft: '55px'}}>
                 I first learned about Yewon School when I was in the 4th grade.
                 <br /> I heard that Yewon School was famous for its art program,
                 as
@@ -315,13 +315,13 @@ const InterViewYellow = () => {
                 for me to
                 <br /> learn from experienced teachers, so I decided to enroll.
               </Content>
-              <Question>
+              <Question style={{marginLeft: '55px'}}>
                 Do you have any memorable episodes from
                 <br />
                 Yewon School?
               </Question>
-              <Content>
-                Since most of the students are artists, each of them has a<br />{" "}
+              <Content style={{marginLeft: '55px'}}>
+                Since most of the students are artists, each of them has a<br />
                 unique personality. Sometimes conflicts arise, but I think it's
                 <br /> amazing how we grow by influencing each other positively
                 <br /> rather than focusing on conflicts. If I had to choose the
@@ -335,11 +335,11 @@ const InterViewYellow = () => {
                 <br /> as many people attended, and it felt different from
                 anything I<br /> had experienced before.
               </Content>
-              <Question>
+              <Question style={{marginLeft: '55px'}}>
                 When did you start to feel that your drawing skills
                 <br /> had significantly improved?
               </Question>
-              <Content>
+              <Content style={{marginLeft: '55px'}}>
                 I've been drawing well since I was young. However, I feel that
                 <br />
                 my drawing skills significantly improved during the entrance

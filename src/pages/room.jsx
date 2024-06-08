@@ -55,7 +55,7 @@ export default Room;
 
 const Container = styled.div`
   display: flex;
-  width: 100%;
+  width: 1479px;
   height: 100%;
   justify-content: center;
   align-items: center;
