@@ -83,7 +83,7 @@ const InterViewYellow = () => {
           </Body>
           <Title src={interview} alt="interview" />
           <Body>
-            <Left style={{ marginLeft: "20px" }}>
+            <Left style={{ marginLeft: "5px" }}>
               <Question>
                 어떤 것이 예술에 대한 관심을 가지게 했나요?
                 <br />
@@ -109,7 +109,7 @@ const InterViewYellow = () => {
                 <br /> creativity.
               </Content>
             </Left>
-            <Right style={{ paddingLeft: "50px" }}>
+            <Right style={{ paddingLeft: "65px" }}>
               <Question>
                 자신의 예전 작품을 다시 본 경험이 있나요?
                 <br /> {archiveText}에서 과거의 작품들을 다시 보면,
@@ -288,12 +288,12 @@ const InterViewYellow = () => {
               </Content>
             </Left>
             <Right>
-              <Question>
+              <Question style={{marginLeft: '75px'}}>
                 What was the reason for your admission to
                 <br />
                 Yewon School?
               </Question>
-              <Content>
+              <Content style={{marginLeft: '75px'}}>
                 I had always been interested in drawing, and hearing
                 <br /> compliments about my skills from those around me
                 <br /> naturally led me to dream of a future in art. The desire
@@ -302,12 +302,12 @@ const InterViewYellow = () => {
                 at
                 <br /> Yewon School.
               </Content>
-              <Question>
+              <Question style={{marginLeft: '75px'}}>
                 Do you have any memorable episodes from
                 <br />
                 Yewon School?
               </Question>
-              <Content>
+              <Content style={{marginLeft: '75px'}}>
                 One vivid memory I have is from the summer vacation
                 <br /> of my first year at Yewon School. Even during the
                 <br /> vacation, my friends and I would meet every day to
@@ -315,11 +315,11 @@ const InterViewYellow = () => {
                 most
                 <br /> enjoyable memories I have from my time at school.
               </Content>
-              <Question>
+              <Question style={{marginLeft: '75px'}}>
                 When did you start to feel that your drawing skills
                 <br /> had significantly improved?
               </Question>
-              <Content>
+              <Content style={{marginLeft: '75px'}}>
                 Although I used to draw a lot before, my skills improved
                 <br /> dramatically during the abnormal period when I drew all
                 <br /> day long for the entrance exam. Especially in the final
