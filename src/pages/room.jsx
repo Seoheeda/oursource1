@@ -21,6 +21,10 @@ const Room = () => {
     navigate("/piece", { state: { doorIndex: doorIndex } });
   };
 
+  const clickPicture2 = () => {
+    navigate("/piece2", { state: { doorIndex: doorIndex } });
+  };
+
   const color = (index) => {
     switch (index) {
       case 1:
@@ -45,7 +49,7 @@ const Room = () => {
         <img className="room" src={roomAssets.room} alt="Room"></img>
         <img className="note" onClick={clickNotebook} src={roomAssets.note} alt="Notebook"></img>
         <img className="pic1" onClick={clickPicture} src={roomAssets.pic1} alt="Picture1"></img>
-        <img className="pic2" onClick={clickPicture} src={roomAssets.pic2} alt="Picture2"></img>
+        <img className="pic2" onClick={clickPicture2} src={roomAssets.pic2} alt="Picture2"></img>
       </div>
     </Container>
   );
