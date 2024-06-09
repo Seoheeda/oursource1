@@ -339,12 +339,12 @@ export default InterViewYellow;
 
 const Container = styled.div`
   display: flex;
-  width: 100%;
+  width: 1479px;
   height: 100%;
   align-items: center;
   flex-direction: column;
   background-color: #f6ce7c;
-  overflow-x: scroll;
+  overflow-x: auto;
 `;
 
 const Top = styled.div`

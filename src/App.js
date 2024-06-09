@@ -4,6 +4,7 @@ import Main from './pages/main';
 import Room from './pages/room';
 import Interview from './pages/interview';
 import Piece from './pages/piece';
+import Piece2 from './pages/piece2';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/room" element={<Room />} />
           <Route path="/interview" element={<Interview />} />
           <Route path="/piece" element={<Piece />} />
+          <Route path="/piece2" element={<Piece2 />} />
         </Routes>
     </BrowserRouter>
   );
