@@ -22,6 +22,7 @@ const Main = () => {
     onSwipedRight: prevDoor,
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
+    trackTouch: true, 
   });
 
   const clickDoor = (index) => {
