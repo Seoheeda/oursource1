@@ -55,10 +55,15 @@ const Container = styled.div`
     flex-direction: column;
   }
   .file {
-    padding-top: 340px;
+    padding-top: 440px;
     margin-left: 30px;
+    width: 110px;
+    height: 132px;
   }
   .file2 {
     margin-left: 80px;
+    width: 110px;
+    height: 132px;
+    padding-right: 30px;
   }
 `;
