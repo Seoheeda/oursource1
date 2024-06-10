@@ -48,17 +48,22 @@ const Container = styled.div`
     padding-left: 100px;
   }
   .pic1 {
-    padding-top: 40px
+    padding-top: 40px;
   }
   .right {
     display: flex;
     flex-direction: column;
   }
   .file {
-    padding-top: 340px;
+    padding-top: 420px;
     margin-left: 10px;
+    width: 110px;
+    height: 132px;
   }
   .file2 {
     margin-left: 60px;
+    width: 110px;
+    height: 132px;
+    margin-right: 50px;
   }
 `;

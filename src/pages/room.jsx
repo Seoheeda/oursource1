@@ -86,11 +86,11 @@ const Container = styled.div`
   .pic1 {
     width: 100px;
     top: 130px;
-    left: 630px;
+    left: 620px;
   }
   .pic2 {
     width: 110px;
     top: 270px;
-    left: 480px;
+    left: 470px;
   }
 `;

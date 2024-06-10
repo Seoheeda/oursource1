@@ -36,14 +36,17 @@ const Container = styled.div`
   background-color: #F8F7F4;
   .card1 {
     padding-top: 425px;
-    padding-right: 10px;
-    padding-left: 100px;
+    padding-right: 170px;
   }
   .pic1 {
-    padding-top: 60px
+    padding-top: 200px;
+    width: 465px;
+    height: 327px;
   }
   .file {
     padding-top: 520px;
-    margin-left: 40px;
+    margin-left: 130px;
+    width: 110px;
+    height: 132px;
   }
 `;

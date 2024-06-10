@@ -45,5 +45,8 @@ const Container = styled.div`
   .file {
     padding-top: 520px;
     margin-left: 40px;
+    width: 110px;
+    height: 132px;
+    padding-right: 40px;
   }
 `;
