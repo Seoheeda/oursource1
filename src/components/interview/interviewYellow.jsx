@@ -344,7 +344,7 @@ const Wrap = styled.div`
 
 const Container = styled.div`
   display: flex;
-  width: 1550px;
+  width: 1500px;
   height: 100%;
   align-items: center;
   flex-direction: column;

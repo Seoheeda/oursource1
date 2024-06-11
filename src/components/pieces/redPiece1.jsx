@@ -45,8 +45,9 @@ const Wrap = styled.div`
 
 const Container = styled.div`
   display: flex;
-  width: 1550px;
-  height: 740px;
+  width: 1500px;
+  min-height: 740px;
+  height: 100%;
   justify-content: center;
   background-color: #F8F7F4;
   .card1 {
@@ -62,7 +63,7 @@ const Container = styled.div`
     flex-direction: column;
   }
   .file {
-    padding-top: 420px;
+    margin-top: 420px;
     margin-left: 10px;
     width: 110px;
     height: 132px;

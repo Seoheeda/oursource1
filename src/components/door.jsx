@@ -17,12 +17,12 @@ const Main = () => {
     setCurrentDoor((prev) => (prev - 1 + doors.length) % doors.length);
   };
 
-  const handlers = useSwipeable({
+  const swipeHandlers = useSwipeable({
     onSwipedLeft: nextDoor,
     onSwipedRight: prevDoor,
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
-    trackTouch: true, 
+    trackTouch: true,
   });
 
   const clickDoor = (index) => {
@@ -33,13 +33,13 @@ const Main = () => {
     <Container>
       <DoorsContainer currentDoor={currentDoor} doorCount={doors.length}>
         {doors.map((door, index) => (
-          <div key={index} className="door-wrapper" {...handlers}>
-            <div className="left"></div>
+          <div key={index} className="door-wrapper" {...swipeHandlers}>
+            <div className="left" onClick={prevDoor}></div>
             <div className="door">
               <img src={door} alt={`door${index + 1}`} className="door-image" />
               <div onClick={() => clickDoor((index % 5))} className="cover"></div>
             </div>
-            <div className="right"></div>
+            <div className="right" onClick={nextDoor}></div>
           </div>
         ))}
       </DoorsContainer>
@@ -73,8 +73,9 @@ const DoorsContainer = styled.div`
     width: 1350px; /* Adjusted total width including spacing */
   }
 
-  .left, .right {
-    width: 480px; /* Adjusted for proper spacing */
+  .left,
+  .right {
+    width: 480px; 
     height: 100%;
   }
 

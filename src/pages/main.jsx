@@ -90,7 +90,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 1213px;
-  height: 800px;
+  min-height: 800px;
+  height: 100%;
   justify-content: center;
   align-items: center;
   position: relative;

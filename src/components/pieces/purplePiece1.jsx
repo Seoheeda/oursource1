@@ -44,12 +44,13 @@ export default RedPiece1;
 const Wrap = styled.div`
   width: 100%;
   height: 100%;
-`
+`;
 
 const Container = styled.div`
   display: flex;
-  width: 1550px;
-  height: 780px;
+  width: 1500px;
+  min-height: 740px;
+  height: 100%;
   justify-content: center;
   background-color: #f8f7f4;
   .card1 {
@@ -65,7 +66,7 @@ const Container = styled.div`
     flex-direction: column;
   }
   .file {
-    padding-top: 440px;
+    margin-top: 440px;
     margin-left: 30px;
     width: 110px;
     height: 132px;
@@ -74,6 +75,6 @@ const Container = styled.div`
     margin-left: 80px;
     width: 110px;
     height: 132px;
-    padding-right: 30px;
+    margin-right: 30px;
   }
 `;
