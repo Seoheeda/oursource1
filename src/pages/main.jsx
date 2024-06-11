@@ -31,7 +31,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  /* background-color: gray; */
 
   .yeWon {
     position: absolute;

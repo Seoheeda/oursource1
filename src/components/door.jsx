@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 import DOORS from '../util/doors';
 
 const Main = () => {
-  const [currentDoor, setCurrentDoor] = useState(0);
-  const doors = [DOORS.yellow, DOORS.pink, DOORS.red, DOORS.purple, DOORS.green];
+  const [currentDoor, setCurrentDoor] = useState(5);
+  const doors = [DOORS.yellow, DOORS.pink, DOORS.red, DOORS.purple, DOORS.green, DOORS.yellow, DOORS.pink, DOORS.red, DOORS.purple, DOORS.green, DOORS.yellow, DOORS.pink, DOORS.red, DOORS.purple, DOORS.green];
   const navigate = useNavigate();
 
   const nextDoor = () => {
@@ -22,6 +22,7 @@ const Main = () => {
     onSwipedRight: prevDoor,
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
+    trackTouch: true, 
   });
 
   const clickDoor = (index) => {
@@ -99,6 +100,6 @@ const DoorsContainer = styled.div`
     top: 0;
     left: 0;
     opacity: 0;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 `;

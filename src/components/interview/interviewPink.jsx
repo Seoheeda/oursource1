@@ -26,7 +26,7 @@ const InterViewYellow = () => {
   const archiveEngText = "<Yewon Archive 100>";
 
   return (
-    <>
+    <Wrap>
       <GlobalStyle />
       <Container>
         <Screen>
@@ -316,20 +316,25 @@ const InterViewYellow = () => {
           </Body>
         </Screen>
       </Container>
-    </>
+    </Wrap>
   );
 };
 
 export default InterViewYellow;
 
+const Wrap = styled.div`
+  width: 100%;
+  height: 100%;
+`
+
 const Container = styled.div`
   display: flex;
-  width: 100%;
+  width: 1550px;
   height: 100%;
   align-items: center;
   flex-direction: column;
   background-color: #f0c0d8;
-  overflow-x: scroll;
+  overflow-y: visible;
 `;
 
 const Top = styled.div`

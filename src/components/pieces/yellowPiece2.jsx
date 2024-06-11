@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Page from "../../assets/pieces/yellow/page.svg";
 
 const yellowPiece2 = () => {
   return (
     <Container>
-        <img src={Page} alt="page" />
+      <Image src={Page} alt="page" />
     </Container>
   );
 };
@@ -14,10 +14,15 @@ export default yellowPiece2;
 
 const Container = styled.div`
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 832px; 
   align-items: center;
   justify-content: center;
-  background-color: #F8F7F4;
+  background-color: #f8f7f4;
+`;
+
+const Image = styled.img`
+  max-width: 100%;
+  height: auto; 
 `;
 

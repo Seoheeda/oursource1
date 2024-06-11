@@ -15,43 +15,53 @@ const RedPiece1 = () => {
   };
 
   return (
-    <Container>
-      <div>
-        <img src={Card1} alt="card1" className="card1" />
-      </div>
-      <div>
-        <img src={Pic1} alt="pic1" className="pic1" />
-      </div>
-      <div className="files">
-        <a href="https://yewon100.cargo.site/3-1" onClick={handleClick}>
-          <img src={File} alt="file" className="file" />
-        </a>
-        <a href="https://art.onthewall.io/hmuBTFy6SFa4SUdNcNdv" onClick={handleClick2}>
-          <img src={File2} alt="file" className="file2" />
-        </a>
-      </div>
-    </Container>
+    <Wrap>
+      <Container>
+        <div>
+          <img src={Card1} alt="card1" className="card1" />
+        </div>
+        <div>
+          <img src={Pic1} alt="pic1" className="pic1" />
+        </div>
+        <div className="files">
+          <a href="https://yewon100.cargo.site/3-1" onClick={handleClick}>
+            <img src={File} alt="file" className="file" />
+          </a>
+          <a
+            href="https://art.onthewall.io/hmuBTFy6SFa4SUdNcNdv"
+            onClick={handleClick2}
+          >
+            <img src={File2} alt="file" className="file2" />
+          </a>
+        </div>
+      </Container>
+    </Wrap>
   );
 };
 
 export default RedPiece1;
+
+const Wrap = styled.div`
+  width: 100%;
+  height: 100%;
+`
 
 const Container = styled.div`
   display: flex;
   width: 1550px;
   height: 780px;
   justify-content: center;
-  background-color: #F8F7F4;
+  background-color: #f8f7f4;
   .card1 {
     padding-top: 540px;
     padding-right: 40px;
     padding-left: 100px;
   }
   .pic1 {
-    padding-top: 20px
+    padding-top: 20px;
   }
   .files {
-    display: flex;  
+    display: flex;
     flex-direction: column;
   }
   .file {
