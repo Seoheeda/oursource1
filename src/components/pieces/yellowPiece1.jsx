@@ -31,11 +31,8 @@ const YellowPiece1 = () => {
 export default YellowPiece1;
 
 const Wrap = styled.div`
-  display: flex;
   width: 100%;
-  height: 832px;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
   background-color: #f8f7f4;
 `;
 
