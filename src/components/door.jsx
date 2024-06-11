@@ -37,7 +37,7 @@ const Main = () => {
             <div className="left"></div>
             <div className="door">
               <img src={door} alt={`door${index + 1}`} className="door-image" />
-              <div onClick={() => clickDoor(index)} className="cover"></div>
+              <div onClick={() => clickDoor((index % 5))} className="cover"></div>
             </div>
             <div className="right"></div>
           </div>
