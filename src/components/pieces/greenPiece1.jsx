@@ -53,8 +53,8 @@ const Container = styled.div`
   justify-content: center;
   background-color: #F8F7F4;
   .card1 {
-    padding-top: 425px;
-    padding-right: 170px;
+    padding-top: 330px;
+    padding-right: 30px;
   }
   .pic1 {
     padding-top: 200px;
@@ -62,8 +62,8 @@ const Container = styled.div`
     height: 327px;
   }
   .file {
-    margin-top: 520px;
-    margin-left: 130px;
+    margin-top: 470px;
+    margin-left: 50px;
     width: 110px;
     height: 132px;
   }
