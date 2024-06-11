@@ -39,7 +39,7 @@ const Container = styled.div`
   display: flex;
   width: 1500px;
   min-height: 740px;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
   background-color: #F8F7F4;
   .card1 {
