@@ -10,6 +10,7 @@ const YellowPiece1 = () => {
   };
 
   return (
+    <Wrap>
     <Container>
       <div>
         <img src={Card1} alt="card1" className="card1" />
@@ -23,10 +24,16 @@ const YellowPiece1 = () => {
         </a>
       </div>
     </Container>
+    </Wrap>
   );
 };
 
 export default YellowPiece1;
+
+const Wrap = styled.div`
+  width: 100%;
+  height: 100%;
+`;
 
 const Container = styled.div`
   display: flex;
