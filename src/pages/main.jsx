@@ -88,11 +88,9 @@ const Main = () => {
 export default Main;
 
 const Wrap = styled.div`
-  display: flex;
+  width: 1213px;
   height: 800px; /* Default height */
-  background-color: white;
-  justify-content: center;
-  align-items: flex-start;
+  align-self: center;
 
   @media (max-width: 480px) {
     height: 2500px; /* Height for mobile devices */
@@ -106,7 +104,7 @@ const Wrap = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 1213px;
+  width: 1550px;
   height: 800px;
   justify-content: center;
   align-items: center;
@@ -126,8 +124,9 @@ const DoorContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  position: absolute;
-  left: 0;
+  width: 1213px;
+  /* position: absolute; */
+  /* left: 0; */
   z-index: 10000;
 
   .ofCourse {

@@ -75,10 +75,9 @@ export default Room;
 
 const Wrap = styled.div`
   display: flex;
-  width: 100%;
-  height: 720px; /* Default height */
-  justify-content: center;
-  background-color: #f8f7f4;
+  width: 1479px;
+  height: 2720px; /* Default height */
+  /* justify-content: center; */
 
   @media (max-width: 480px) {
     height: 2500px; /* Height for mobile devices */
