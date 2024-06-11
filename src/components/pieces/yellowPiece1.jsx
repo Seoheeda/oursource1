@@ -33,7 +33,7 @@ export default YellowPiece1;
 const Wrap = styled.div`
   display: flex;
   width: 100vw;
-  height: 832px;
+  height: 5000px;
   background-color: #f8f7f4;
 `;
 
@@ -41,7 +41,6 @@ const Container = styled.div`
   display: flex;
   width: 1500px;
   min-height: 740px;
-  height: 100vh;
   justify-content: center;
   background-color: #F8F7F4;
   .card1 {
