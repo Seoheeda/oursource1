@@ -40,28 +40,60 @@ const Room = () => {
     }
   };
 
-
   const roomAssets = color(doorIndex);
 
   return (
-    <Container>
-      <div>
-        <img className="room" src={roomAssets.room} alt="Room"></img>
-        <img className="note" onClick={clickNotebook} src={roomAssets.note} alt="Notebook"></img>
-        <img className="pic1" onClick={clickPicture} src={roomAssets.pic1} alt="Picture1"></img>
-        <img className="pic2" onClick={clickPicture2} src={roomAssets.pic2} alt="Picture2"></img>
-      </div>
-    </Container>
+    <Wrap>
+      <Container>
+        <div>
+          <img className="room" src={roomAssets.room} alt="Room"></img>
+          <img
+            className="note"
+            onClick={clickNotebook}
+            src={roomAssets.note}
+            alt="Notebook"
+          ></img>
+          <img
+            className="pic1"
+            onClick={clickPicture}
+            src={roomAssets.pic1}
+            alt="Picture1"
+          ></img>
+          <img
+            className="pic2"
+            onClick={clickPicture2}
+            src={roomAssets.pic2}
+            alt="Picture2"
+          ></img>
+        </div>
+      </Container>
+    </Wrap>
   );
 };
 
 export default Room;
 
+const Wrap = styled.div`
+  display: flex;
+  width: 100%;
+  height: 720px; /* Default height */
+  justify-content: center;
+  background-color: #f8f7f4;
+
+  @media (max-width: 480px) {
+    height: 2500px; /* Height for mobile devices */
+  }
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    height: 1000px; /* Height for tablets or small desktops */
+  }
+`;
+
 const Container = styled.div`
   display: flex;
   width: 1479px;
   height: 100%;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   position: relative; /* Add relative positioning to the container */
@@ -70,12 +102,16 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
   }
-  .note, .pic1, .pic2 {
+  .note,
+  .pic1,
+  .pic2 {
     position: absolute;
     cursor: pointer;
     transition: opacity 0.3s ease; /* Smooth transition for opacity */
   }
-  .note:hover, .pic1:hover, .pic2:hover {
+  .note:hover,
+  .pic1:hover,
+  .pic2:hover {
     opacity: 0.6; /* Change opacity on hover */
   }
   .note {
@@ -85,7 +121,7 @@ const Container = styled.div`
   }
   .pic1 {
     width: 100px;
-    top: 130px;
+    top: 140px;
     left: 620px;
   }
   .pic2 {

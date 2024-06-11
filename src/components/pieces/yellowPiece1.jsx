@@ -33,8 +33,16 @@ export default YellowPiece1;
 const Wrap = styled.div`
   display: flex;
   width: 100vw;
-  height: 5000px;
+  height: 720px; /* Default height */
   background-color: #f8f7f4;
+
+  @media (max-width: 480px) {
+    height: 2500px; /* Height for mobile devices */
+  }
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    height: 1000px; /* Height for tablets or small desktops */
+  }
 `;
 
 const Container = styled.div`

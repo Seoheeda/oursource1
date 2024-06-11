@@ -42,8 +42,18 @@ const RedPiece1 = () => {
 export default RedPiece1;
 
 const Wrap = styled.div`
-  width: 100%;
-  height: 100%;
+  display: flex;
+  width: 100vw;
+  height: 720px; /* Default height */
+  background-color: #f8f7f4;
+
+  @media (max-width: 480px) {
+    height: 2500px; /* Height for mobile devices */
+  }
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    height: 1000px; /* Height for tablets or small desktops */
+  }
 `;
 
 const Container = styled.div`

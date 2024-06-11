@@ -70,6 +70,7 @@ const Main = () => {
   }, []);
 
   return (
+    <Wrap>
     <Container>
       <img className="yeWon" alt="yeWon" src={yeWon} />
       <DoorContainer>
@@ -80,18 +81,33 @@ const Main = () => {
       </DoorContainer>
       <img className="artists" alt="artists" src={artists} />
     </Container>
+    </Wrap>
   );
 };
 
 export default Main;
 
+const Wrap = styled.div`
+  display: flex;
+  height: 800px; /* Default height */
+  background-color: white;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: 480px) {
+    height: 2500px; /* Height for mobile devices */
+  }
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    height: 1000px; /* Height for tablets or small desktops */
+  }
+`;
+
 const Container = styled.div`
-  margin: auto;
   display: flex;
   flex-direction: column;
   width: 1213px;
-  min-height: 800px;
-  height: 100%;
+  height: 800px;
   justify-content: center;
   align-items: center;
   position: relative;
