@@ -32,7 +32,7 @@ export default YellowPiece1;
 
 const Wrap = styled.div`
   width: 100%;
-  height: 100%;
+  height: 832px;
 `;
 
 const Container = styled.div`
